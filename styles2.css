@@ -480,15 +480,22 @@ input[type="submit"] {
         text-align: center;
     }
 
+    h4 {
+        font-size: 1.25rem;
+        line-height: 1rem;
+        padding-bottom: 20px;
+    }
+
     input[type="email"] {
-        width: 50%;
-        min-width: 400px;
+        width: 400px;
+        display: block;
+        margin: 0 auto;
     }
 
     input[type="submit"] {
-        width: 50%;
-        min-width: 400px;
-        margin-top: 10px;
+        width: 400px;
+        display: block;
+        margin: 10px auto 0;
     }
 
     .contact {
@@ -551,9 +558,9 @@ input[type="submit"] {
         text-align: center;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 728px) {
     header {
-        background-position: 35% 50%;
+        background-position: 37.5% 50%;
     }
 
     .newModelsContent,
@@ -588,5 +595,18 @@ input[type="submit"] {
     .footerNav {
         width: 20%;
         padding-right: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    input[type="email"],
+    input[type="submit"] {
+        width: 95%;
+    }
+}
+
+@media (max-width: 375px) {
+    h1 {
+        margin-top: 355px;
     }
 }
