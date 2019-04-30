@@ -1,0 +1,576 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+/* GENERAL STYLES */
+
+html {
+	font-size: 125%;
+	font-family: "sans-serif";
+}
+
+h1,
+h2,
+h3,
+h4,
+p, 
+ul,
+li,
+a,
+img {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+	width: 85%;
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+/* HEADER STYLES */
+
+header {
+    background-image: url(assets/headerImage.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+h1 {
+    font-family: "Kanit";
+    font-size: 5.81rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 0.83; 
+    letter-spacing: 1px;
+    color: #CC1D36;
+    text-transform: uppercase;
+    margin-top: 240px;
+    width: 45%;
+}
+
+nav p {
+    font-family: "Kanit";
+    font-size: 1.275rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    text-transform: uppercase;
+    float: left;
+    padding-top: 24px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav li {
+    padding-top: 25px;
+}
+
+header nav a {
+    font-family: "Catamaran";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.61;
+    text-align: right;
+    color: #FCFCFC;
+    text-transform: uppercase;
+    margin-right: 34px;
+}
+
+.logo {
+    position: absolute;
+    /* top: 400;
+    left: 40; */
+}
+
+.logo p {
+    font-family: "Lato";
+    font-size: 1.55rem;
+    line-height: 1.02;
+    letter-spacing: 0.3px;
+    color: #FCFBFB;
+    padding-top: 10px;
+}
+
+header li {
+    float: left;
+}
+
+nav a:hover,
+nav a:focus {
+    border-bottom: 2px solid #FCFBFB;
+}
+
+.socialIcons {
+    position: absolute;
+    right: 35px;
+    bottom: 20px;
+}
+
+header i {
+    color: white;
+    width: 24px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.social i:hover,
+.social i:focus {
+    color: #CC1D36;
+    padding-left: 5px;
+}
+
+.fa-bars {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1.5rem;
+    visibility: hidden;
+}
+
+/* MAIN STYLES */
+
+main {
+    background-color: #FCFBFB
+}
+
+h2 {
+    font-family: "Kanit";
+    font-size: 2.1rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.02;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 12px;
+}
+
+h3,
+h4 {
+    color: #FCFBFB;
+    text-transform: uppercase;
+    font-family: "Kanit";
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+main p {
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.45;
+    color: #1f2022;
+}
+
+.news h2 {
+    padding: 93px 0;
+    text-align: center;
+}
+
+.galleryImage {
+    width: calc((100% / 3) - 27px);
+    float: left;
+    margin-right: 40px;
+}
+
+.galleryImage:last-child {
+    margin: 0;
+}
+
+.highlightLeft,
+.highlightRight {
+    float: left;
+    padding: 100px 0 60px;
+}
+
+.highlightLeft {
+    width: 25%;
+    margin-top: 5px;
+}
+
+.highlight p {
+    margin-bottom: 7.25%;
+}
+
+.highlightRight {
+    width: calc(75% - 40px);
+}
+
+.highlightLeft {
+    margin-right: 40px;
+}
+
+button {
+    font-family: "Kanit";
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.45;
+    text-align: center;
+    color: #fcfbfb;
+    text-transform: uppercase;
+    background-color: #BA0621;
+    height: 50px;
+    width: 160px;
+    border: none;
+    }
+
+button:hover,
+button:focus {
+
+    }
+
+.newModelsLeft,
+.newModelsRight,
+.nightStyleLeft,
+.nightStyleRight {
+    width: 50%;
+}
+
+.newModelsLeft,
+.nightStyleRight {
+    height: 36.5vw;
+    display: table;
+}
+
+.newModelsLeft {
+    padding-right: 90px;
+}
+
+.nightStyleRight {
+    padding-left: 90px;
+}
+
+.newModelsContent,
+.nightStyleContent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.newModelsLeft,
+.newModelsRight {
+    float: right;
+}
+
+.nightStyleRight,
+.nightStyleLeft {
+    float: left;
+}
+
+.nightStyleRight {
+    padding-left: 90px;
+}
+
+.nightStyleRight p,
+.newModelsLeft p {
+    padding-bottom: 20px;
+}
+
+.funIcons {
+    background-image: url(./assets/backgroundImage.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.funIcons h3 {
+    font-size: 31.2px;
+}
+
+.funIcons i {
+    color: #CC1D36;
+    font-size: 2.5rem;
+}
+
+.icon {
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin: 90px 0;
+}
+
+/* FOOTER STYLES */
+
+footer {
+    background-color: #6C0918;
+}
+
+footer .wrapper {
+    padding: 93px 0 100px;
+}
+
+.update,
+.contact,
+.footerNav {
+    float: left;
+}
+
+.update {
+    width: 52%;
+}
+
+.contact {
+    width: calc(38% - 50px);
+    margin-left: 50px;
+}
+
+.footerNav {
+    width: 10%;
+}
+
+footer p {
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.45;
+    color: #fcfbfb;
+}
+
+.update p {
+    margin-bottom: 10px;
+}
+
+input[type="email"] {
+    width: 70%;
+    height: 50px;
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.45;
+    color: #1f2022;
+    padding-left: 20px;
+}
+
+input[type="submit"] {
+    width: 25%;
+    min-width: 160px;
+    height: 50px;
+    font-family: "Kanit";
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.45;
+    text-align: center;
+    color: #fcfbfb;
+    background-color: black;
+    text-transform: uppercase;
+    border: 1px solid black;
+}
+
+.footerNav li {
+    font-family: "Kanit";
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.45;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.footerNav a {
+    color: #fcfbfb;
+}
+
+.copyright {
+    background-color: #0B0101;
+}
+
+.copyright p {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #FCFBFB;
+    text-align: center;
+    padding: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1245px) {
+    input[type="email"] {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1104px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    main p {
+        font-size: 0.9rem;
+    }
+
+    .newModelsLeft {
+    padding-right: 50px;
+    }
+
+    .nightStyleRight {
+    padding-left: 50px;
+    }
+
+}
+
+@media (max-width: 1032px) {
+    .galleryImage {
+        width: calc(50% - 9px);
+        margin: 0;
+    }
+
+    .galleryImage:first-child {
+        margin-right: 18px;
+    }
+
+    .galleryImage:last-child {
+        display: none;
+    }
+    .highlightLeft,
+    .highlightRight {
+        width: 100%;
+        float: none;
+    }
+
+    .highlightLeft {
+        padding: 30px 0 0 0;
+        clear: both;
+    }
+
+    .highlightRight {
+        padding: 30px 0;
+    }
+
+    .highlight p {
+        margin-bottom: 30px;
+    }
+
+    footer .wrapper {
+        padding: 0;
+    }
+
+    .update {
+        width: 100%;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    input[type="email"] {
+        width: 50%;
+        min-width: 400px;
+    }
+
+    input[type="submit"] {
+        width: 50%;
+        min-width: 400px;
+        margin-top: 10px;
+    }
+
+    .contact {
+        width: 60%;
+        margin: 0 0 30px;
+        padding-left: 10%;
+    }
+
+    .footerNav {
+        width: 40%;
+        margin: 0 0 30px;
+        padding-right: 12%;
+    }
+
+
+}
+
+@media (max-width: 980px) {
+    h1 {
+        font-size: 3.6rem;
+        margin-top: 270px;
+    }
+
+    .logo p {
+    font-size: 1.1rem;
+    }
+
+    .news h2 {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 890px) {
+    nav p,
+    nav li {
+        visibility: hidden;
+    }
+
+    .fa-bars {
+        visibility: visible;
+    }
+
+    .newModelsLeft,
+    .newModelsRight,
+    .nightStyleLeft,
+    .nightStyleRight {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+
+    .newModelsContent,
+    .nightStyleContent,
+    .newModelsContent h2,
+    .nightStyleContent h2 {
+        text-align: center;
+}
+
+@media (max-width: 720px) {
+    .newModelsContent,
+    .nightStyleContent {
+        padding: 30px 0;
+    }
+
+    .funIcons h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 680px) {
+    .icon {
+        width: 100%;
+        margin: 30px auto;
+    }
+    
+    .contact {
+        width: 80%;
+        padding-left: 7%;
+    }
+
+    .footerNav {
+        width: 20%;
+        padding-right: 7%;
+    }
+}
