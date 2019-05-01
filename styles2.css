@@ -598,10 +598,47 @@ input[type="submit"] {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 486px) {
     input[type="email"],
     input[type="submit"] {
         width: 95%;
+    }
+
+    .contact {
+        width: 76%;
+    }
+
+    .footerNav {
+        width: 24%;
+    }
+
+    .contact p,
+    .footerNav li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 393px) {
+    .contact,
+    .footerNav {
+        width: 100%;
+    }
+
+    .contact {
+        margin-bottom: 20px;
+    }
+
+    .contact p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .contact h4 {
+        text-align: center;
+    }
+
+    .footerNav li {
+        text-align: center;
     }
 }
 
