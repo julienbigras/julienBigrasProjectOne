@@ -57,26 +57,26 @@ header {
     position: relative;
 }
 
-h1 {
+h1,
+nav p {
     font-family: "Kanit";
-    font-size: 5.81rem;
     font-weight: bold;
     font-style: italic;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 5.81rem;
     line-height: 0.83; 
     letter-spacing: 1px;
     color: #CC1D36;
-    text-transform: uppercase;
     margin-top: 40vh;
     width: 45%;
 }
 
 nav p {
-    font-family: "Kanit";
     font-size: 1.275rem;
-    font-weight: bold;
-    font-style: italic;
     color: white;
-    text-transform: uppercase;
     float: left;
     padding-top: 24px;
 }
@@ -100,12 +100,6 @@ header nav a {
     margin-right: 34px;
 }
 
-.logo {
-    position: absolute;
-    /* top: 400;
-    left: 40; */
-}
-
 .logo p {
     font-family: "Lato";
     font-size: 1.55rem;
@@ -120,7 +114,9 @@ header li {
 }
 
 nav a:hover,
-nav a:focus {
+nav a:focus,
+.footerNav a:hover,
+.footerNav a:focus {
     border-bottom: 2px solid #FCFBFB;
 }
 
@@ -375,6 +371,11 @@ input[type="submit"] {
     background-color: black;
     text-transform: uppercase;
     border: 1px solid black;
+}
+
+input[type="submit"]:hover {
+    background-color: grey;
+    color: black;
 }
 
 .footerNav li {
