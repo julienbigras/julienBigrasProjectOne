@@ -123,7 +123,8 @@ header li {
     float: left;
 }
 
-.driveSolo:hover {
+.driveSolo:hover,
+.driveSolo:focus {
     color: #CC1D36;
     border: none;
 }
@@ -149,8 +150,8 @@ header i {
     margin-bottom: 12px;
 }
 
-.social i:hover,
-.social i:focus {
+.social a:hover i,
+.social a:focus i {
     color: #CC1D36;
     padding-left: 5px;
 }
@@ -310,7 +311,8 @@ button:focus {
     margin: 90px 0;
 }
 
-.funIcons a:hover {
+.funIcons a:hover,
+.funIcons a:focus {
     color: #CC1D36;
 }
 
@@ -348,7 +350,7 @@ footer p {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.45;
-    color: #fcfbfb;
+    color: #FCFBFB;
 }
 
 .update p {
