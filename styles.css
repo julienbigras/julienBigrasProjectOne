@@ -43,7 +43,7 @@ a {
 .wrapper {
 	width: 85%;
     margin: 0 auto;
-    max-width: 1800px;
+    max-width: 1600px;
 }
 
 /* HEADER STYLES */
@@ -99,6 +99,12 @@ header nav a {
     text-transform: uppercase;
     margin-right: 34px;
 }
+
+.logo {
+    position: absolute;
+}
+
+/* I deleted this styling that set the logo position to absolute because I didn't think it was doing anything, but then it made a whole bunch of white space appear when a media query caused my nav to disappear. So it seems to be helping, but to be honest, I have no idea how! */
 
 .logo p {
     font-family: "Lato";
@@ -234,7 +240,7 @@ button {
 
 button:hover,
 button:focus {
-
+    background-color: black;
     }
 
 .newModelsLeft,
@@ -249,6 +255,8 @@ button:focus {
     height: 36.5vw;
     display: table;
 }
+
+/* I wouldn't have thought to use view width units and display: table were it not for an article my mentor sent me, written by another bootcamp grad. This is it here: https://medium.com/@JonWongCodes/vertical-centering-old-school-edition-5964d0050b62 */
 
 .newModelsLeft {
     padding-right: 90px;
@@ -290,7 +298,7 @@ button:focus {
 }
 
 .funIcons h3 {
-    font-size: 31.2px;
+    font-size: 1.56rem;
 }
 
 .funIcons i {
@@ -373,7 +381,8 @@ input[type="submit"] {
     border: 1px solid black;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+input[type="submit"]:focus {
     background-color: grey;
     color: black;
 }
