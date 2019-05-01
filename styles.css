@@ -46,6 +46,18 @@ a {
     max-width: 1600px;
 }
 
+h1,
+h2,
+h3,
+h4,
+.driveSolo,
+button {
+    font-family: "Kanit";
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
 /* HEADER STYLES */
 
 header {
@@ -57,14 +69,6 @@ header {
     position: relative;
 }
 
-h1,
-nav p {
-    font-family: "Kanit";
-    font-weight: bold;
-    font-style: italic;
-    text-transform: uppercase;
-}
-
 h1 {
     font-size: 5.81rem;
     line-height: 0.83; 
@@ -74,7 +78,7 @@ h1 {
     width: 45%;
 }
 
-nav p {
+.driveSolo {
     font-size: 1.275rem;
     color: white;
     float: left;
@@ -89,7 +93,7 @@ nav li {
     padding-top: 25px;
 }
 
-header nav a {
+nav li a {
     font-family: "Catamaran";
     font-size: 18px;
     font-weight: 600;
@@ -117,6 +121,11 @@ header nav a {
 
 header li {
     float: left;
+}
+
+.driveSolo:hover {
+    color: #CC1D36;
+    border: none;
 }
 
 nav a:hover,
@@ -161,12 +170,8 @@ main {
 }
 
 h2 {
-    font-family: "Kanit";
     font-size: 2.1rem;
-    font-weight: bold;
-    font-style: italic;
     line-height: 1.02;
-    text-transform: uppercase;
     text-align: left;
     padding-bottom: 12px;
 }
@@ -174,11 +179,6 @@ h2 {
 h3,
 h4 {
     color: #FCFBFB;
-    text-transform: uppercase;
-    font-family: "Kanit";
-    font-weight: bold;
-    font-style: italic;
-    text-transform: uppercase;
 }
 
 main p {
@@ -224,14 +224,10 @@ main p {
 }
 
 button {
-    font-family: "Kanit";
     font-size: 1rem;
-    font-weight: bold;
-    font-style: italic;
     line-height: 1.45;
     text-align: center;
-    color: #fcfbfb;
-    text-transform: uppercase;
+    color: #FCFBFB;
     background-color: #BA0621;
     height: 50px;
     width: 160px;
@@ -297,8 +293,9 @@ button:focus {
     background-position: center;
 }
 
-.funIcons h3 {
+.funIcons a {
     font-size: 1.56rem;
+    color: #FCFBFB;
 }
 
 .funIcons i {
@@ -311,6 +308,10 @@ button:focus {
     width: 33%;
     text-align: center;
     margin: 90px 0;
+}
+
+.funIcons a:hover {
+    color: #CC1D36;
 }
 
 /* FOOTER STYLES */
@@ -355,13 +356,13 @@ footer p {
 }
 
 input[type="email"] {
-    width: 65%;
-    height: 50px;
     font-family: "Roboto";
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.45;
-    color: #1f2022;
+    width: 65%;
+    height: 50px;
+    color: #1F2022;
     padding-left: 20px;
 }
 
@@ -398,7 +399,7 @@ input[type="submit"]:focus {
 }
 
 .footerNav a {
-    color: #fcfbfb;
+    color: #FCFBFB;
 }
 
 .copyright {
@@ -539,8 +540,8 @@ input[type="submit"]:focus {
 }
 
 @media (max-width: 890px) {
-    nav p,
-    nav li {
+    nav li,
+    .driveSolo {
         display: none;
     }
 
